@@ -1,0 +1,44 @@
+Figure out what's the complexity of the following algorithms in the best case and in the worst case:
+
+a)
+void f1(int *a, int n)
+{
+  int i, t, s = 1;
+  while(s)
+  {
+    s = 0;
+    for(int i = 1; i < n; i++)
+    {
+      if(a[i] < a[i-1])
+      {
+        t = a[i];
+        a[i] = a[i-1];
+        a[i-1] = t;
+
+        s = 1; // setting the flag
+      }
+    }
+  }
+}
+
+Answer:
+ -> Best case: O(n)
+ -> Worst case: O(n^2)
+
+b) Here the array is sorted:
+bool f2(int* a, int n, int elem)
+{
+  for(int i  = 1; i < n; i++)
+  {
+    if(a[i] == elem)
+    {
+      return true;
+    }
+  }
+
+  return false;
+}
+
+Answer:
+ -> Best case: O(1)
+ -> Worst case: O(n)
