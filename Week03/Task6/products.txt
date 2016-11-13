@@ -1,0 +1,8 @@
+34 bread 0.99
+12 laptop 899.99
+45 car 9999.99
+44 book 29.99
+2 suit 79.99
+5 pants 9.99
+68 bag 1.99
+54 sandwich 2.99
