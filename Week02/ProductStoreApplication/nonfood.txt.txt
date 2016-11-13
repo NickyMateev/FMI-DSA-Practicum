@@ -1,0 +1,7 @@
+N NotBread UK 0.79 0.99 0.59 43 0
+N NotBread1 UK 2.49 2.99 2.09 12 0
+N NotBread2 UK 0.79 0.99 0.59 33 1
+N NotBread3 UK 0.79 0.99 0.59 53 0
+N NotBread4 UK 1.79 1.99 0.59 123 0
+N NotBread5 UK 0.79 0.99 0.59 3 0
+N NotBread6 UK 0.79 0.99 0.59 54 1
