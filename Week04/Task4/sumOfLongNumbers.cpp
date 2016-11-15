@@ -5,6 +5,12 @@
 
 int main()
 {
+	int length1, length2;
+	std::cout << "First number's length: ";
+	std::cin >> length1;
+	std::cout << "Second number's length: ";
+	std::cin >> length2;
+
 	std::stack<int> number1, number2;
 	int input;
 
