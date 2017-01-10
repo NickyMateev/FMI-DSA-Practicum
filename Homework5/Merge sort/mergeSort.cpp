@@ -1,23 +1,26 @@
 #include <iostream>
 #include <cmath>
 
-void swap(int& var1, int& var2)
+template <typename T>
+void swap(T& var1,T& var2)
 {
-	int temp = var1;
+	T temp = var1;
 	var1 = var2;
 	var2 = temp;
 }
 
-int min(int var1, int var2)
+template <typename T>
+T min(T var1, T var2)
 {
 	return var1 < var2 ? var1 : var2;
 }
 
-void merge(int* arr, int end1, int end2)
+template <typename T>
+void merge(T* arr, int end1, int end2)
 {
 	int i = 0, j = end1, k = 0;
 
-	int* tempArray = new int[end2];
+	T* tempArray = new T[end2];
 	while (i < end1 && j < end2)
 	{
 		if (arr[i] < arr[j])
@@ -55,7 +58,8 @@ void merge(int* arr, int end1, int end2)
 	delete[] tempArray;
 }
 
-void mergeSort(int* arr, int size)
+template <typename T>
+void mergeSort(T* arr, int size)
 {
 	for (int i = 1; i < size; i *= 2)
 	{
@@ -66,7 +70,8 @@ void mergeSort(int* arr, int size)
 	}
 }
 
-void printArr(int* arr, int size)
+template <typename T>
+void printArr(T* arr, int size)
 {
 	for (int i = 0; i < size; i++)
 	{
