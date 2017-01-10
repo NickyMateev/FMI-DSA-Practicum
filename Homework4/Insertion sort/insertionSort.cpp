@@ -1,8 +1,10 @@
 #include <iostream>
 
-void insertionSort(int* arr, int size)
+template <typename T>
+void insertionSort(T* arr, int size)
 {
-	int elem, j;
+	T elem;
+	int j;
 	for (int i = 1; i < size; i++)
 	{
 		elem = arr[i];
@@ -16,7 +18,8 @@ void insertionSort(int* arr, int size)
 	}
 }
 
-void printArr(int* arr, int size)
+template <typename T>
+void printArr(T* arr, int size)
 {
 	for (int i = 0; i < size; i++)
 	{

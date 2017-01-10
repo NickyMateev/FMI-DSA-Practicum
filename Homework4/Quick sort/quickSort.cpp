@@ -7,14 +7,16 @@ int getRand(int min, int max)
 	return (rand() % (max - min) + min);
 }
 
-void swap(int& var1, int& var2)
+template <typename T>
+void swap(T& var1, T& var2)
 {
-	int temp = var1;
+	T temp = var1;
 	var1 = var2;
 	var2 = temp;
 }
 
-void quickSort(int* arr, int size)
+template <typename T>
+void quickSort(T* arr, int size)
 {
 	if (size < 2)
 	{
@@ -23,7 +25,7 @@ void quickSort(int* arr, int size)
 
 	int low = 0;
 	int top = size - 1;
-	int pivot = arr[getRand(0, size)];
+	T pivot = arr[getRand(0, size)];
 
 	while (low < top)
 	{
@@ -47,7 +49,8 @@ void quickSort(int* arr, int size)
 	quickSort(arr + low + 1, size - low - 1);
 }
 
-void printArr(int* arr, int size)
+template <typename T>
+void printArr(T* arr, int size)
 {
 	for (int i = 0; i < size; i++)
 	{
